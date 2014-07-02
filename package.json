@@ -1,33 +1,47 @@
 {
-  "name": "line-no",
-  "description": "Get the line number of a string that matches a given regex pattern.",
+  "name": "line-number",
+  "description": "Get the line number for each regex match found in a string.",
   "version": "0.1.0",
-  "homepage": "https://github.com/jonschlinkert/line-no",
+  "homepage": "https://github.com/jonschlinkert/line-number",
   "author": {
     "name": "Jon Schlinkert",
     "url": "https://github.com/jonschlinkert"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/jonschlinkert/line-no.git"
+    "url": "git://github.com/jonschlinkert/line-number.git"
   },
   "bugs": {
-    "url": "https://github.com/jonschlinkert/line-no/issues"
+    "url": "https://github.com/jonschlinkert/line-number/issues"
   },
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/jonschlinkert/line-no/blob/master/LICENSE-MIT"
+      "url": "https://github.com/jonschlinkert/line-number/blob/master/LICENSE-MIT"
     }
   ],
   "keywords": [
-    "docs",
-    "documentation",
-    "generate",
-    "generator",
-    "markdown",
-    "templates",
-    "verb"
+    "each",
+    "expression",
+    "file",
+    "find",
+    "index",
+    "line",
+    "line-no",
+    "line-number",
+    "lines",
+    "locate",
+    "match",
+    "matches",
+    "num",
+    "number",
+    "pattern",
+    "re",
+    "regex",
+    "regexp",
+    "regular",
+    "search",
+    "string"
   ],
   "main": "index.js",
   "engines": {

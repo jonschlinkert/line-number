@@ -1,4 +1,4 @@
-# line-no [![NPM version](https://badge.fury.io/js/line-no.png)](http://badge.fury.io/js/line-no)
+# line-number [![NPM version](https://badge.fury.io/js/line-number.png)](http://badge.fury.io/js/line-number)
 
 > Get the line number of a string that matches a given regex pattern.
 
@@ -6,18 +6,18 @@
 Install with [npm](npmjs.org):
 
 ```bash
-npm i line-no --save-dev
+npm i line-number --save-dev
 ```
 
 ## Author
 
 **Jon Schlinkert**
- 
+
 + [github/jonschlinkert](https://github.com/jonschlinkert)
-+ [twitter/jonschlinkert](http://twitter.com/jonschlinkert) 
++ [twitter/jonschlinkert](http://twitter.com/jonschlinkert)
 
 ## License
-Copyright (c) 2014 Jon Schlinkert, contributors.  
+Copyright (c) 2014 Jon Schlinkert, contributors.
 Released under the MIT license
 
 ***

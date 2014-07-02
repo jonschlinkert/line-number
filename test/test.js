@@ -1,5 +1,5 @@
 /*!
- * line-no <https://github.com/jonschlinkert/line-no>
+ * line-number <https://github.com/jonschlinkert/line-number>
  *
  * Copyright (c) 2014 Jon Schlinkert, contributors.
  * Licensed under the MIT License
@@ -7,38 +7,43 @@
 
 var fs = require('fs');
 var expect = require('chai').expect;
-var lineNo = require('../');
+var lineNumber = require('../');
 
 var fixtures = function (filename) {
   return fs.readFileSync('test/fixtures/' + filename, 'utf8');
 };
 
-describe('lineNo:', function () {
+describe('lineNumber:', function () {
   it('should get the line number', function () {
     var fixture = fixtures('README.md');
-    var re = /.*npm.*/g;
+    var re = /npm/;
     var expected = [
       {
-        "line": 6,
-        "match": "Install with [npm](npmjs.org):"
+        "line": "Install with [npm](npmjs.org):",
+        "number": 6,
+        "match": "npm"
       },
       {
-        "line": 9,
-        "match": "npm i line-no --save-dev"
+        "line": "npm i line-number --save-dev",
+        "number": 9,
+        "match": "npm"
       }
     ];
-    expect(lineNo(fixture, re)).to.eql(expected);
+    var actual = lineNumber(fixture, re);
+    expect(actual).to.eql(expected);
   });
 
   it('should get the line number', function () {
     var fixture = fixtures('LICENSE-MIT');
-    var re = /Jon.+/g;
+    var re = /Jon[^,]+/g;
     var expected = [
       {
-        "line": 1,
-        "match": "Jon Schlinkert, contributors."
+        "line": "Copyright (c) 2014 Jon Schlinkert, contributors.",
+        "number": 1,
+        "match": "Jon Schlinkert"
       }
     ];
-    expect(lineNo(fixture, re)).to.eql(expected);
+    var actual = lineNumber(fixture, re);
+    expect(actual).to.eql(expected);
   });
 });
