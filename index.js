@@ -9,7 +9,7 @@
 
 
 module.exports = function lineNo(str, re) {
-  return str.split(/[\r\n]/).map(function (line, i) {
+  return str.split(/\r?\n/).map(function (line, i) {
     if (re.test(line)) {
       return {
         line: line,
